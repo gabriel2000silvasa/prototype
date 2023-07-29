@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 Olá a Todos, esses Projeto tem por finalidade, a criação de uma biblioteca de jogos, usando a tecnologia que quiser contanto que não cause conflito ou atrapalhe o desempenho deoutros jogos ja criados. 
 
 Local feito para a demonstração de habilidades e caso tenha a idea de um jogo de autoria própria, sinta-se a vontade para disponilizar por meio deste projeto OpenSource!
@@ -32,4 +33,6 @@ Obrigado por fazer parte do nosso projeto!
 
 Descreva com clareza seu jogo, o que propoem ou o que alterou, obrigado!!
 
+=======
+>>>>>>> Stashed changes
 

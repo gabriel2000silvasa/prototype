@@ -1,0 +1,417 @@
+
+@import url('https://fonts.googleapis.com/css2? family= REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300; 1.400;1.500;1.600;1.700;1.800;1.900 & display=swap');
+
+
+body {
+    background-color: #6CC1CA;
+    font-family: 'REM', sans-serif;
+    }
+
+.bolha {
+    margin: 180px;
+}
+
+.agrupador {
+    background-color: azure;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.banner-flappyBird {
+    width: 17%;
+    height: 680px;
+    background-color: #6CC1CA;
+    overflow: hidden;
+    position: relative;
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+
+.aba-inpiriações {
+    background-color: blue;
+}
+
+.sobreOautor {
+    background-color: green;
+}
+
+.cut{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom: 100px solid hwb(186 43% 21%);
+    border-right: 180px solid azure;
+    width: 0;
+}
+
+.cut2{
+    position: absolute;
+    bottom: 0;
+    left: 0 ;
+    border-right: 180px solid #6CC1CA;
+    border-bottom: 100px solid azure;
+    width: 0;
+}
+
+
+.btn-jogar {
+    position: absolute;
+    background-color: #FFEB3B;
+    border-radius: 11px;
+    padding: 12px 17px;
+
+    bottom: 34%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    color: azure;
+    font-weight: 600;
+    font-style: italic;
+    cursor: pointer;
+    font-size:1.3rem ;
+    z-index: 2;
+}
+
+.btn-jogar::before {
+    content: "";
+    background-color: #FF5722;
+    position: absolute;
+    display: block;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform: scaleX(0);
+    
+}
+
+.btn-jogar:hover::before {
+    transform: scaleX(1);
+    transition-duration: 500ms;
+    border-radius: 11px;
+
+    
+
+}
+
+.btn-jogar:hover {
+    padding: 17px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+
+}
+
+.flappy-bird {
+    position: absolute;
+    top: 18%;
+    animation: moverCimaBaixo 1s infinite alternate;
+}
+
+.flappy-bird-nuvens {
+    position: absolute;
+    top: 17%;
+    animation: moverCimaBaixo 2s infinite alternate;
+}
+@keyframes moverCimaBaixo {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-16px);
+
+    }
+}
+
+
+.nome-inspirações {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagens-inpirações {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+.aba-inspirações {
+    display: flex;
+    flex-direction: column;
+    color: #FF5722;
+
+    background-color: beige;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
+}
+
+
+.nome-inspirações{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-style: italic;
+    color: #494949
+}
+
+.imagens-inpirações {
+   display: flex;
+   justify-content: space-between;
+   width: 400px;
+   
+}
+
+.link-inpiration {
+color: #FF5722;
+}
+
+.item-imagem-inspiração {
+    border-radius: 20px;
+}
+
+.developer {
+    background-color: beige;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
+    color: #494949;
+}
+
+.nome-developer{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-style: italic;
+
+    display: flex;
+    justify-content: center;
+}
+
+.fotoedados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.portfolio-btn {
+    background-color: #FF5722;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: azure;
+}
+
+.github-btn {
+    background-color: rgb(100, 100, 100);
+    padding: 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: azure;
+}
+
+.linkedin-btn {
+    background-color: blue;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: azure;
+}
+
+.link {
+    color: azure;
+}
+
+.portfolio-btn:hover, .linkedin-btn:hover, .github-btn:hover {
+    box-shadow: 0px 0px 3px black;
+
+}
+
+
+.item-fotos, .item-social  {
+
+    transition: .35s;
+    cursor: pointer;
+}
+
+.container-fotos:hover > :not(:hover) {
+        transform: scale(0.9);
+        opacity: .4;
+
+}
+.container-social:hover > :not(:hover) {
+        transform: scale(0.9);
+        opacity: .4;
+
+}
+
+.msg-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    color: #494949;
+}
+
+.msg-game-title {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.msg-game-frase {
+    font-weight: 500;
+    font-style: italic ;
+}
+
+.canos-flappyBird {
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    right: 5%;
+    overflow: hidden;
+    animation: moverBaixoParaCima 4s;
+}
+
+.banner-escondido {
+    display: flex;
+    flex-direction: row;
+
+    background-color: #6CC1CA;
+    padding: 20px;
+
+
+  
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.514);
+
+    position: relative;
+    justify-content: space-around;
+    /* width: 450px; */
+    width: 100%;
+
+    align-items: center;
+    
+
+    
+}
+
+.flappy-bird-escondidas {
+    position: relative; 
+    animation: moverCimaBaixo 1s infinite alternate;
+}
+
+.flappy-bird-nuvens-escondidas {
+    position: absolute;
+    animation: moverCimaBaixo 2s infinite alternate;
+    
+}
+
+.btn-jogar-escondido {
+    position: relative;
+    background-color: #FFEB3B;
+    border-radius: 11px;
+    padding: 12px 17px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: azure;
+    font-weight: 600;
+    font-style: italic;
+    cursor: pointer;
+    font-size:1.3rem ;
+    z-index: 2;
+}
+
+
+
+.btn-jogar-escondido::before {
+    content: "";
+    background-color: #FF5722;
+    position: absolute;
+    display: block;
+    inset: 0;
+    z-index: -1;
+    transition: transform 300ms ease;
+    transform: scaleX(0);
+    
+}
+
+.btn-jogar-escondido:hover::before {
+    transform: scaleX(1);
+    transition-duration: 500ms;
+    border-radius: 11px;
+
+}
+
+.btn-jogar-escondido:hover {
+    padding: 17px;
+}
+
+.itens-escondidos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    padding: 10px ;
+    width: 100%;
+
+}
+
+.canos-flappyBird-escondido {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+
+}
+
+.canos-flappyBird-medio {
+    bottom: 0;
+    left: 5%;
+    width: 250px;
+    position: absolute;
+}
+
+.nuvem-aleatoria1 {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    width: 170px;
+    animation: moverCimaBaixo 2s infinite alternate;
+}
+
+.nuvem-aleatoria2 {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 170px;
+    animation: moverCimaBaixo 2s infinite alternate;
+}
+
+@keyframes moverBaixoParaCima {
+    from {
+        bottom: -150px;
+    }
+    to {
+        bottom: 0;
+
+    }
+}
