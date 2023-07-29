@@ -30,5 +30,6 @@ Prr fim, mantenha organizado por jogo os "assets" e mantenha organizada a parte 
 
 Obrigado por fazer parte do nosso projeto!
 
+Descreva com clareza seu jogo, o que propoem ou o que alterou, obrigado!!
 
 
